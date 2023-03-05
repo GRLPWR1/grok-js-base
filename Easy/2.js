@@ -5,7 +5,7 @@
 */
 
 const objValue = (obj, key) => {
-    /* Тут код*/
+    return obj[key];
 
 }
 
