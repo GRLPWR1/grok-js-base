@@ -10,8 +10,19 @@
 */
 
 const sumOfIntegers = (start, end) => {
-    /* Тут код*/
-
+    let arr = [];
+        if (start <= end) {
+            for (i = start; i <= end; i++) {
+                arr.push(i);
+            }
+        } else {
+            for (i = end; i <= start; i++) {
+                arr.push(i);
+                }
+        }
+        console.log(arr);
+    let result = arr.reduce((sum, current) => sum + current, 0);
+    return result;
 }
 
 module.exports = sumOfIntegers
