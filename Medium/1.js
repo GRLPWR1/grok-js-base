@@ -5,8 +5,9 @@
 */
 
 const logEachLetter = (str) => {
-    /* Тут код*/
-
+    let newArr = str.split('');
+    newArr.forEach(element => {
+        console.log(element);
+    });
 }
-
 module.exports = logEachLetter
