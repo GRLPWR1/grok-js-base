@@ -9,8 +9,15 @@
 */
 
 const nestedArr = (arr, number) => {
-    /* Тут код*/
-
+    
+    for (let eachArr of arr) {
+        for (let i=0; i <= eachArr.length; i++){
+            if (eachArr.includes(number)) {
+                return arr.indexOf(eachArr);
+            }
+        } 
+    } 
+    
 }
 
 module.exports = nestedArr
