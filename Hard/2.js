@@ -10,10 +10,20 @@
 Пример: [ 'one', 'two', 'three' ] => 'three'
 
 */
-
-const longestString = () => {
-    /* Тут код*/
-
+let arr = ['one', 'seven', 'two', 'three', 'fascinating'];
+const longestString = (arr) => {
+    if (arr.length === 0) {
+        return null;
+    }
+    let string;
+    let maxLength = 0;
+    for (let i=0; i < arr.length; i++){
+        if (arr[i].length > maxLength) {
+            maxLength = arr[i].length;
+            string = arr[i];
+        }
+    }
+    return string;
 }
-
-module.exports = longestString
+console.log(longestString(arr));
+// module.exports = longestString
