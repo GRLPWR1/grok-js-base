@@ -26,4 +26,5 @@ const longestString = (arr) => {
     return string;
 }
 console.log(longestString(arr));
-// module.exports = longestString
+
+module.exports = longestString
